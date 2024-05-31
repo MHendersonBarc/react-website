@@ -1,0 +1,132 @@
+/* src/Navbar.css */
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ce7909;
+    padding: 1rem;
+  }
+  
+  .navbar-logo a {
+    font-family: "Varela Round", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 2px;
+  }
+  
+  .navbar-links li {
+    margin-left: 1rem;
+  }
+  
+  .navbar-links a {
+    font-family: "Varela Round", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    border-color: #000000;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fca028;
+  }
+  
+  .navbar-links a:hover {
+    color: #ce7909;
+    background-color: #000000;
+  }
+
+  @keyframes move{
+    0% {top: 0px; left: 0px;}
+    25% {top: 100px; left: 0px;}
+    50% {top: 100px; left: -500px;}
+    75% {top: 0px; left: -500px;}
+    100% {top: 0px; left: 0px;}
+    
+}
+
+  .silly-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 5;
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  
+  .silly-links li {
+    margin-left: 1rem;
+  }
+  
+  .silly-links a {
+    font-family: "Varela Round", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    border-color: #000000;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fca028;
+  }
+  
+  .silly-links a:hover {
+    color: #ce7909;
+    background-color: #000000;
+  }
+
+  #toggleButton {
+    font-family: "Varela Round", sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #fca028;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  #toggleButton:hover {
+    color: #ce7909;
+    background-color: #000000;
+    border: solid;
+    border-color: #000000;
+    border-radius: 10px;
+  }
+  
+  #toggleButton:active {
+    color: #ce7909;
+    background-color: #000000;
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+  }
